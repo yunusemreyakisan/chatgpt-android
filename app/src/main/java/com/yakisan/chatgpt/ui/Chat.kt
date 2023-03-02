@@ -41,15 +41,6 @@ class Chat : AppCompatActivity() {
         message_adapter = MessageAdapter(messages)
         binding.recyclerView.layoutManager = LinearLayoutManager(applicationContext)
         binding.recyclerView.adapter = message_adapter
-        binding.recyclerView.addOnLayoutChangeListener({ v, left, top, right, bottom, oldLeft, oldTop, oldRight, oldBottom ->
-            if (bottom < oldBottom) {
-                binding.recyclerView.postDelayed({
-                    binding.recyclerView.smoothScrollToPosition(
-                        message_adapter.getItemCount() - 1
-                    )
-                }, 100)
-            }
-        })
 
 
         //OnClickListener
@@ -99,7 +90,7 @@ class Chat : AppCompatActivity() {
                     val params: MutableMap<String, String> = HashMap()
                     params["Content-Type"] = "application/json"
                     params["Authorization"] =
-                        "Bearer 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"
+                        "Bearer YOUR_TOKEN"
                     return params
                 }
             }
