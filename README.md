@@ -1,24 +1,24 @@
 
-# 🧠 ChatGPT ile Android Uygulaması
+# 🧠 Android App with ChatGPT
 
-Bir bilgi verildiğinde, model bir veya daha fazla tahmini döndürür ve ayrıca her pozisyonda alternatif belirteçlerin olasılıklarını da döndürebilir.
+Given a prompt, the model will return one or more predicted completions, and can also return the probabilities of alternative tokens at each position.
 
 
 
-### 🧩 Tamamlama Dökümanları
+### 🧩 Completion Docs
 1 -  https://platform.openai.com/docs/guides/completion/introduction
 
 2 - https://platform.openai.com/docs/api-reference/completions
 
-### 🔗 API Kullanımı
+### 🔗 API Usage
 
-#### GPT'ye sor
+#### Ask GPT
 
 ```http
   POST https://api.openai.com/v1/completions
 ```
 
-**YOUR_TOKEN** yazan kısmı siteden oluşturduğunuz **key** ile değiştirin.
+Replace **YOUR_TOKEN** with the **key** you created from the site.
 
 ```kotlin
 override fun getHeaders(): MutableMap<String, String> {
@@ -30,9 +30,11 @@ override fun getHeaders(): MutableMap<String, String> {
                 }
 ```
 
-### ⚙️ Kullanılan Teknolojiler
+That's the **magic!**
 
-| **Teknoloji**           | **Entegre**                                                                |
+### 🧪 Potions Used
+
+| **Libraries**           | **Implementation**                                                                |
 | ----------------- | ------------------------------------------------------------------ |
 | Volley | implementation 'com.android.volley:volley:1.2.1' |
 | Lottie | implementation 'com.airbnb.android:lottie:3.4.4' |
