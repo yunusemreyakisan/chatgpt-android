@@ -37,3 +37,5 @@ override fun getHeaders(): MutableMap<String, String> {
 | Volley | implementation 'com.android.volley:volley:1.2.1' |
 | Lottie | implementation 'com.airbnb.android:lottie:3.4.4' |
 
+### ▶️ Demo
+https://user-images.githubusercontent.com/116274664/222902988-5f4d0d58-d91b-4a12-be27-1b7925a1d002.mp4
